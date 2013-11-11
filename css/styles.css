@@ -82,3 +82,30 @@ code {
 .blue{
   border-left-color: #2a4e84;
 }
+.green{
+  border-left-color:#2a842c;
+}
+.orange{
+  border-left-color: #d07023;
+}
+.purple{
+  border-left-color: #4c2a84;
+}
+.red{
+  border-left-color: #8f3023;
+}
+.violet{
+  border-left-color: #842a7d;
+}
+.lightblue{
+    border-left-color: #34c4c2;
+}
+.darkblue{  
+  border-left-color: #2a2c84;
+}
+.brown{
+  border-left-color: #84762a;
+}
+.yellow{
+  border-left-color: #d6d41d;
+}
