@@ -119,3 +119,6 @@ a:hover div > *{
   background-color: #949494 !important;
   text-decoration: none !important;
 }
+.h3 {
+  font-family: 'Noto Sans', sans-serif;
+}
