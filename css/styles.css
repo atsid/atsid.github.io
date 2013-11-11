@@ -82,34 +82,34 @@ code {
   padding: 2px 15px 15px 15px;
 }
 .panel-default>.panel-heading.blue, .blue{
-  border-left-color: #2a4e84;
+  border-left: solid 8px #2a4e84;
 }
 .panel-default>.panel-heading.green, .green{
-  border-left-color:#2a842c;
+  border-left:solid 8px #2a842c;
 }
 .panel-default>.panel-heading.orange, .orange{
-  border-left-color: #d07023;
+  border-left: solid 8px #d07023;
 }
 .panel-default>.panel-heading.purple, .purple{
-  border-left-color: #4c2a84;
+  border-left: solid 8px #4c2a84;
 }
 .panel-default>.panel-heading.red, .red{
-  border-left-color: #8f3023;
+  border-left: solid 8px #8f3023;
 }
 .panel-default>.panel-heading.violet, .violet{
-  border-left-color: #842a7d;
+  border-left: solid 8px #842a7d;
 }
 .panel-default>.panel-heading.lightblue, .lightblue{
-    border-left-color: #34c4c2;
+    border-left: solid 8px #34c4c2;
 }
 .panel-default>.panel-heading.darkblue, .darkblue{  
-  border-left-color: #2a2c84;
+  border-left: solid 8px #2a2c84;
 }
 .panel-default>.panel-heading.brown, .brown{
-  border-left-color: #84762a;
+  border-left: solid 8px #84762a;
 }
 .panel-default>.panel-heading.yellow, .yellow{
-  border-left-color: #d6d41d;
+  border-left: solid 8px #d6d41d;
 }
 .panel-default:hover > *,.panel-default:hover *, .panel-default:active *,{
   background-color: #949494;
