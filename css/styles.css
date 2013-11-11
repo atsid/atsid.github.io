@@ -123,7 +123,7 @@ a:hover div > *{
   font-family: 'Noto Sans', sans-serif;
 }
 .atsimg{
-  background-image: url(/css.ats.png);
+  background-image: url(/css/ats.png);
   height: 113px;
   width: 95px;
   margin: auto;
