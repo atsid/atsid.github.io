@@ -4,7 +4,7 @@
   /*
    * Smooth scroll to sections with an offset
    */
-  $('nav a.scroll').on('click', function (e) {
+  $('a.scroll').on('click', function (e) {
     e.preventDefault();
     $(document.body).animate({
       scrollTop: $($(this).attr('href')).offset().top - 85

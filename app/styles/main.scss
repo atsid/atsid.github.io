@@ -4,9 +4,10 @@
 
 
 body {
-  background: #eef2f3;
+  background: #f6f7f8;
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #333;
+  line-height: 1.8;
 }
 
 .browsehappy {
@@ -21,6 +22,14 @@ body {
   width: 207px;
   height: 48px;
   margin: 6px;
+}
+
+.logo-sm {
+  background-image: url('../images/logo-sm.png');
+  width: 100px;
+  height: 48px;
+  margin-top: 30px;
+  display: inline-block;
 }
 
 nav {
@@ -52,7 +61,7 @@ nav {
       color: #fff;
       cursor: pointer;
       padding: 6px 10px;
-      margin: 15px 10px;
+      margin: 9px 10px;
       font-weight: 600;
       text-decoration: none;
 
@@ -112,13 +121,19 @@ nav {
   }
 }
 
+.blog {
+  border-top: 1px solid #ddd;
+  padding: 40px 0;
+  background: #fff;
+}
+
 .services {
   .container {
     background: #fff;
     border: 1px solid #ddd;
     border-radius: 2px;
   }
-
+  padding-bottom: 40px;
 
   p {
     margin-right: 40px;
@@ -192,7 +207,13 @@ h4 {
   color: #666;
   font-weight: 300;
   margin-bottom: 20px;
-  margin-top: 80px;
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 20px;
+  padding-top: 80px;
+  width: 600px;
+  max-width: 100%;
   font-size: 30px;
 }
 
@@ -202,28 +223,39 @@ h5 {
   color: #333;
 }
 
-.work, .about {
-  background: #fff;
-  border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
-
+ .about {
   line-height: 1.8;
   padding-top: 40px;
   padding-bottom: 20px;
 }
 
-.about {
+.about, .blog {
   padding: 70px 0px;
-  h5 {
-    font-weight: 300;
+  h4 {
+    padding-top: 10px;
   }
 }
 
+.blog h5 {
+  margin-bottom: 0px;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
 .work {
-  margin-bottom: 20px;
+  padding: 40px 0 60px 0;
+  background: #fff;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+
+.work h4 {
+  margin-bottom: 60px;
 }
 
 .work h5 {
+  color: #333;
+  font-size: 20px;
   margin-bottom: 20px;
   @media (max-width: 767px) {
     & {
@@ -241,7 +273,7 @@ h5 {
   position: relative;
   box-shadow: 0px 1px 2px rgba(0,0,0,.25);
   border: 3px solid #fff;
-  border-radius: 3px;
+  border-radius: 1px;
   max-width: 100%;
 
   @media (max-width: 767px) {
@@ -250,7 +282,37 @@ h5 {
       display: block;
     }
   }
+}
 
+.hero-about {
+  background: #981d20;
+  padding: 40px;
+  h4 {
+    color: #fff;
+    border-bottom: 0;
+    font-weight: 600;
+    padding-top: 20px;
+  }
+  h5 {
+    color: #fff;
+    font-weight: 300;
+  }
+}
+
+.hero-work {
+  background-color: #303030;
+  background-image: url('../images/work-bg.jpg');
+  border-top: 1px solid #eee;
+  background-position: 50% -25px;
+  background-size: cover;
+  padding-top: 85px;
+  padding-bottom: 85px;
+  margin-top: 100px;
+
+  h4 {
+    color: #333;
+    font-weight: 600;
+  }
 }
 
 .work .row {
@@ -258,7 +320,7 @@ h5 {
 }
 
 .learn-more {
-  background: #951d1f;
+  background: #981D20;
   color: #fff;
   font-weight: 600;
   padding: 8px 14px;
@@ -274,17 +336,41 @@ h5 {
 
 footer {
   background: #333;
-  color: #fff;
+  color: #999;
   padding: 80px 0px;
+  line-height: 1.8;
 
   h5 {
-    color: #aaa;
+    color: #fff;
     font-size: 13px;
   }
+
+  dt {
+    color: #666;
+    font-size: 13px;
+    float: left;
+    line-height: 1.8;
+  }
+
+  dd {
+    margin-left: 60px;
+    line-height: 1.8;
+  }
+
   a {
-    color: #fff;
+    color: #999;
     &:hover {
-      color: #fff;
+      color: #999;
+    }
+  }
+
+  .right {
+    text-align: right;
+  }
+
+  @media (max-width: 767px) {
+    .right {
+      text-align: center;
     }
   }
 }
