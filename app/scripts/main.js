@@ -1,4 +1,5 @@
 (function () {
+  'use strict';
 
   /*
    * Smooth scroll to sections with an offset
@@ -28,15 +29,15 @@
    * Adds a 1/2 parallax effect to the hero bg
    */
   var hero = $('.hero');
-  var adjustHeroParallax = function (scrollPos) {
-    if (scrollPos < hero[0].offsetHeight) {
-      hero.css("backgroundPosition", '50% ' + (scrollPos/2 - 75) + "px");
-    }
-  };
+// var adjustHeroParallax = function (scrollPos) {
+//   if (scrollPos < hero[0].offsetHeight) {
+//     hero.css('backgroundPosition', '50% ' + (scrollPos/2 - 75) + 'px');
+//   }
+// };
 
 
   // scroll listener
-  $(document).on('scroll', function (e) {
+  $(document).on('scroll', function () {
     var scrollTop = $(document).scrollTop();
     adjustNav(scrollTop);
     //adjustHeroParallax(scrollTop);
@@ -46,7 +47,7 @@
   /*
    * Cycles hero subtitle text
    */
-  var titles = ['interfaces.', 'experiences.', 'software.', 'APIs.'];
+  var titles = ['beautiful experiences.', 'intuitive interfaces.', 'clean APIs.', 'scalable architectures.', 'productive software.'];
   var idx = 0;
   var swapEl = $('.swap');
   var stagingEl = $('<strong style="top: 25px; opacity: 0;" class="swap"></strong>');
@@ -58,7 +59,7 @@
       swapEl.animate({opacity: 0, top: '-25px'}, 200, function () {
         stagingEl.text(t);
         stagingEl.insertAfter(swapEl);
-        swapEl.remove()
+        swapEl.remove();
         var tmp = swapEl;
         swapEl = stagingEl;
         stagingEl = tmp;
