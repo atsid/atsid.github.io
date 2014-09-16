@@ -289,6 +289,9 @@ module.exports = function (grunt) {
         }, {
           src: 'node_modules/apache-server-configs/dist/.htaccess',
           dest: '<%= config.dist %>/.htaccess'
+        }, {
+          src: 'DIST_README.md',
+          dest: '<%= config.dist %>/README.md'
         }]
       },
       styles: {
