@@ -28,12 +28,14 @@ grunt serve:dist
 Push your changes to the `site` branch, then:
 ```
 rm -rf dist
+mkdir dist
 cd dist
 git init
 git remote add origin git@github.com:atsid/atsid.github.io.git
 git pull origin master
 cd ..
 grunt build
+cd dist
 git add .
 git commit -m "[your message]"
 git push origin master
