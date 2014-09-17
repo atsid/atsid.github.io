@@ -6,7 +6,7 @@
    */
   $('a.scroll').on('click', function (e) {
     e.preventDefault();
-    $(document.body).animate({
+    $('body,html').animate({
       scrollTop: $($(this).attr('href')).offset().top - 85
     }, 250);
     return false;

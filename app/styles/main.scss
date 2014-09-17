@@ -65,7 +65,7 @@ nav {
       font-weight: 600;
       text-decoration: none;
 
-      &:hover {
+      &:hover,&:active, &:focus {
         color: #fff;
       }
     }
@@ -329,7 +329,7 @@ h5 {
   border-radius: 2px;
   margin-top: 20px;
   display: inline-block;
-  &:hover {
+  &:hover, &:active, &:focus {
     color: #fff;
     text-decoration: none;
   }
@@ -360,7 +360,7 @@ footer {
 
   a {
     color: #999;
-    &:hover {
+    &:hover, &:active, &:focus {
       color: #999;
     }
   }
