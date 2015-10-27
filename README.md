@@ -1,3 +1,6 @@
+[![Dependency Status](https://david-dm.org/atsid/atsid.github.io.svg)](https://david-dm.org/atsid/atsid.github.io)
+[![Dev Dependency Status](https://david-dm.org/atsid/atsid.github.io/dev-status.svg)](https://david-dm.org/atsid/atsid.github.io)
+
 atsid.github.io
 ===============
 
