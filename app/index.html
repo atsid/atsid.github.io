@@ -15,6 +15,7 @@
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha256-3dkvEK0WLHRJ7/Csr0BZjAWxERc5WH7bdeUya2aXxdU= sha512-+L4yy6FRcDGbXJ9mPG8MT/3UCDzwR9gPeyFNMCtInsol++5m3bk2bXWKdZjvybmohrAsn3Ua5x8gfLnbE1YkOg==" crossorigin="anonymous">
     <!-- endbuild -->
     <!-- build:js scripts/vendor/modernizr.js -->
     <script src="bower_components/modernizr/modernizr.js"></script>
@@ -33,11 +34,12 @@
           </div>
           <div class="col-xs-9 text-right">
             <ul class="list-unstyled menu">
-              <li class="hidden-xs"><a class="scroll" href="#section-services">Services</a></li>
-              <li class="hidden-xs"><a class="scroll" href="#section-work">Work</a></li>
-              <li class="hidden-xs"><a class="scroll" href="#section-about">About us</a></li>
-              <!-- <li class="hidden-xs"><a class="scroll" href="#section-blog">Blog</a></li> -->
-              <li><a class="contact" target="_blank" href="http://www.atsid.com/contact-us">Contact</a></li>
+              <li class="hidden-xs"><a class="scroll" href="#section-opensource">Open Source</a></li>
+               <li class="hidden-xs"><a class="scroll" href="#section-other">Other Projects</a></li>
+              <!--<li><a class="contact" target="_blank" href="http://www.atsid.com/contact-us">Contact</a></li>-->
+              <li class="hidden-xs" style="color:white">|</li>
+              <li class="hidden-xs"><a href="http://www.atsid.com" target="_blank" >ATS Main</a></li>
+              <li class="hidden-xs"><a href="http://labs.atsid.com/guides" target="_blank">Developer Guides</a></li>
             </ul>
           </div>
         </div>
@@ -49,7 +51,7 @@
         <h3>We design <strong class="swap">beautiful experiences.</strong></h2>
       </div>
     </section>
-    <div class="hero-about">
+    <!--<div class="hero-about">
       <div class="container">
         <div class="row">
           <div class="col-sm-10 col-sm-offset-1">
@@ -57,45 +59,60 @@
           </div>
         </div>
       </div>
-    </div>
+    </div>-->
     <section class="services">
-      <h4 id="section-services" class="text-center">What we do</h4>
+      <h4 id="section-opensource" class="text-center">Our Popular Open Source Projects</h4>
       <div class="container">
-        <div class="row">
-          <div class="col-sm-6">
-            <i class="ic"></i>
-            <h5>UX Design</h5>
-            <p>People are complicated. Software doesn't have to be. Effortless user experiences come from true understanding. We get that.</p>
-          </div>
-          <div class="col-sm-6">
-            <i class="ic ui"></i>
-            <h5>UI Design</h5>
-            <p>Pixel perfect interfaces, every time. We’re all about the details. We create rich, responsive, beautiful interfaces.</p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-6">
-            <i class="ic dev"></i>
-            <h5>Development</h5>
-            <p>Our programmers craft elegant APIs using a variety of high-productivity and high-performance open technologies. <a href="http://github.com/atsid">We ♥ open source.</a></p>
-          </div>
-          <div class="col-sm-6">
-            <i class="ic deploy"></i>
-            <h5>Operations</h5>
-            <p>Scalable, performant deployments. Our cloud architectures are carefully designed to ensure maximum speed, security, and uptime.</p>
-          </div>
-        </div>
+        <div id="popular-projects"></div>
       </div>
+      <div style="margin-top:40px"><a href="http://github.com/atsid" target="_blank">See the rest of our projects on GitHub</a></div>
     </section>
-    <h4 id="section-work" class="text-center">Featured work</h4>
+
+    <section id="projects-breakdown-section" style="padding-top: 10px">
+        <h4>Projects Breakdown</h4>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <h5>Total Repositories</h5>
+                    <h2><p id="number-of-repos-stat" style="padding: 0"></p></h2>
+                </div>
+                <div class="col-sm-6">
+                    <h5>Average # of Issues</h5>
+                    <h2><p id="average-issues-stat" style="padding: 0"></p></h2>
+                </div>
+            </div>
+            <div class="row" style="margin-top: 20px">
+                <div class="col-sm-6">
+                    <h5>Most Common License</h5>
+                    <h2><a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache 2.0</a></h2>
+                </div>
+                <div class="col-sm-6">
+                    <h5>Most Popular Language</h5>
+                    <h2><p id="language-stat" style="padding: 0"></p></h2>
+                </div>
+            </div>
+            <div class="row" style="margin-top: 20px">
+                <div class="col-sm-12">
+                    <h5>Languages</h5>
+                    <h2><p id="languages-stat" style="padding: 0"></p></h2>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <h4 id="section-other" class="text-center">Other Projects</h4>
     <section class="work">
       <div class="container">
         <div class="row">
           <div class="col-lg-5 col-sm-6">
-            <img src="images/work-01-sm.png"/>
+            <a href="https://www.crewatlas.com" target="_blank">
+              <img src="images/work-01-sm.png"/>
+            </a>
           </div>
           <div class="col-lg-7 col-sm-6">
-            <h5>Crew Atlas</h5>
+            <h5>
+                <a href="https://www.crewatlas.com" target="_blank">Crew Atlas</a>
+            </h5>
             <p>
               ATS has revolutionized the nuclear power plant industry with new software to help plants monitor, measure, manage, and improve crew performance.
             </p>
@@ -147,30 +164,6 @@
       </div>
     </section>
 
-<!--     <section class="blog">
-      <h4 id="section-blog" class="text-center">Blog</h4>
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-4">
-            <h5>Pixar is a Lean Enterprise?</h5>
-            <div class="text-muted">Sep 12, 2014</div>
-            <h5>Your Org Chart is Upside Down</h5>
-            <div class="text-muted">Aug 30, 2014</div>
-          </div>
-          <div class="col-sm-4">
-            <h5>Why Learn About Lean Startup in an Established Company?</h5>
-            <div class="text-muted">Jun 2, 2014</div>
-            <h5>Breaking Through the Development Catch-22</h5>
-            <div class="text-muted">May 28, 2014</div>
-          </div>
-          <div class="col-sm-4">
-            <h5>Pirate Performance Reviews</h5>
-            <div class="text-muted">Sep 12, 2014</div>
-          </div>
-        </div>
-      </div>
-    </section>
- -->
     <footer>
       <div class="container">
         <div class="row">
@@ -188,7 +181,7 @@
           </div>
           <div class="col-sm-6 right">
             <div class="logo-sm"></div>
-            <div class="copyright">© 2014 Applied Technical Systems, Inc. All Rights Reserved.</div>
+            <div class="copyright">© 2015 Applied Technical Systems, Inc. All Rights Reserved.</div>
           </div>
         </div>
       </div>

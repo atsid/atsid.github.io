@@ -1,0 +1,3 @@
+java_small - https://en.wikipedia.org/wiki/File:Java_logo.png
+javascript/javascript_small - https://en.wikipedia.org/wiki/File:JavaScript-logo.png
+scala - https://en.wikipedia.org/wiki/File:Scala_logo.png
