@@ -9,12 +9,7 @@ install:
 - bower install jquery#~1.11.1
 - bower install modernizer#~2.8.2
 before_script: grunt build
-deploy:
-  provider: releases
-  api_key:
-    secure: Tt+EIQGkICbaEvKi/BgaGyA3hj9EwaHI0DXVrznNenWz+Jy6ZyXpuIyx6gNMnFT7XKdr6yxnzzUMaa7k+HwVzcEA6ALL/Rq+tHShNGbYfnJktlxEBmF+RQhYttQf2gvG948LL9bfeB+zJnbIdAtHSBr/v3WtdUatYqfulLv7DCo=
-  file: dist
-  skip_cleanup: true
-  on:
-    repo: atsid/atsid.github.io
-    branch: travis_conversion
+after_success: test $TRAVIS_PULL_REQUEST == "false" && test $TRAVIS_BRANCH == "master" && bash deploy.sh
+env:
+  global:
+    secure: "AXsZ06K/4MKqUD1/ZCt29/flpFRR1rxrrquUKsu4dVBOugEWBr+RnHffPDkV21udsbqwjn4wu3UZwZ6VsfPaVoiieOrUq4LZl+A6bWsLtjktNKq8DmNNJtXihg3lRioTXVQXgoh/joUmdPWp42hDbjRVKFRX9R0R8G92NggfGR4="
