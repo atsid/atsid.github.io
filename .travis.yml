@@ -3,12 +3,12 @@ node_js:
   - "4.3.1"
 
 before_install: 
-	- npm install -g grunt-cli
-	- npm install -g bower
+- npm install -g grunt-cli
+- npm install -g bower
 
 install: 
-	- npm install
-	- bower install jquery
-	- bower install modernizer
+- npm install
+- bower install jquery
+- bower install modernizer
 
 before_script: grunt build
