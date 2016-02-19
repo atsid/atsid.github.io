@@ -1,14 +1,19 @@
 language: node_js
 node_js:
-  - "4.3.1"
-
-before_install: 
+- 4.3.1
+before_install:
 - npm install -g grunt-cli
 - npm install -g bower
-
-install: 
+install:
 - npm install
 - bower install jquery#~1.11.1
 - bower install modernizer#~2.8.2
-
 before_script: grunt build
+deploy:
+  provider: releases
+  api_key:
+    secure: Tt+EIQGkICbaEvKi/BgaGyA3hj9EwaHI0DXVrznNenWz+Jy6ZyXpuIyx6gNMnFT7XKdr6yxnzzUMaa7k+HwVzcEA6ALL/Rq+tHShNGbYfnJktlxEBmF+RQhYttQf2gvG948LL9bfeB+zJnbIdAtHSBr/v3WtdUatYqfulLv7DCo=
+  file: dist/*
+  on:
+    repo: atsid/atsid.github.io
+    branch: travis_conversion
