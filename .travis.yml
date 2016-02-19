@@ -2,8 +2,7 @@ language: node_js
 node_js:
   - "4.3.1"
 
-before_install: 
-	- npm install -g grunt-cli
+before_install: npm install -g grunt-cli
 install: npm install
 before_script: 
 	- grunt build
