@@ -8,7 +8,7 @@ before_install:
 
 install: 
 - npm install
-- bower install jquery#1.11.1
-- bower install modernizer#2.8.2
+- bower install jquery#~1.11.1
+- bower install modernizer#~2.8.2
 
 before_script: grunt build
