@@ -8,4 +8,4 @@ cd dist
 
 git add -A
 git commit -m "rebuild pages at ${rev}"
-git push origin master
+git push origin travis_temp

@@ -11,7 +11,7 @@ install:
 before_script:
 - bash pre-build.sh
 - grunt build
-after_success: test $TRAVIS_PULL_REQUEST == "false" && test $TRAVIS_BRANCH == "master" && bash deploy.sh
+after_success: test $TRAVIS_PULL_REQUEST == "false" && test $TRAVIS_BRANCH == "travis_conversion" && bash deploy.sh
 env:
   global:
     secure: "AXsZ06K/4MKqUD1/ZCt29/flpFRR1rxrrquUKsu4dVBOugEWBr+RnHffPDkV21udsbqwjn4wu3UZwZ6VsfPaVoiieOrUq4LZl+A6bWsLtjktNKq8DmNNJtXihg3lRioTXVQXgoh/joUmdPWp42hDbjRVKFRX9R0R8G92NggfGR4="
