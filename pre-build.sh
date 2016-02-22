@@ -12,5 +12,5 @@ git config user.email "chris.leach@atsid.com"
 
 git remote add -t travis_temp origin "https://$GH_TOKEN@github.com/atsid/atsid.github.io.git"
 
-git pull origin travis_temp
+git pull -v origin travis_temp
 cd ..
