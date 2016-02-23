@@ -1,0 +1,14 @@
+language: node_js
+node_js:
+- 4.3.1
+before_install:
+- npm install -g grunt-cli
+- npm install -g bower
+install:
+- npm install
+- bower install jquery#~1.11.1
+- bower install modernizer#~2.8.2
+before_script:
+- bash pre-build.sh
+- grunt build
+after_success: test $TRAVIS_PULL_REQUEST == "false" && test $TRAVIS_BRANCH == "site" && bash deploy.sh
