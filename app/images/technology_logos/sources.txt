@@ -1,0 +1,9 @@
+angularjs - https://github.com/angular/angular.js/tree/master/images/logo/AngularJS-Shield.exports
+grunt - https://github.com/gruntjs/grunt/blob/master/README.md
+gulp - https://github.com/gulpjs/artwork/blob/master/gulp.png
+bower - https://github.com/bower/bower/blob/master/README.md
+accumulo - https://en.wikipedia.org/wiki/File:Accumulo_logo.png
+hadoop - https://commons.wikimedia.org/wiki/File:Hadoop_logo.svg
+mongo - https://www.mongodb.com/brand-resources
+nodejs - https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg
+reactjs - https://commons.wikimedia.org/wiki/File:React.js_logo.svg
