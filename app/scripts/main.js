@@ -238,8 +238,8 @@
 
 
     function getRepoList() {
-        return $.get('scripts/test-data/repos.json');
-        // return $.get('//api.github.com/orgs/atsid/repos');
+        // return $.get('scripts/test-data/repos.json');
+        return $.get('//api.github.com/orgs/atsid/repos');
     }
 
     /**
