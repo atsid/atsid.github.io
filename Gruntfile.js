@@ -176,7 +176,9 @@ module.exports = function (grunt) {
             '<%= config.dist %>/styles/{,*/}*.css',
             '<%= config.dist %>/images/{,*/}*.*',
             '<%= config.dist %>/styles/fonts/{,*/}*.*',
-            '<%= config.dist %>/*.{ico,png}'
+            '<%= config.dist %>/*.{ico,png}',
+            '!<%= config.dist %>/images/technology_logos/{,*/}*.*',
+            '!<%= config.dist %>/images/language_logos/{,*/}*.*'
           ]
         }
       }
@@ -207,7 +209,7 @@ module.exports = function (grunt) {
         files: [{
           expand: true,
           cwd: '<%= config.app %>/images',
-          src: '{,*/}*.{gif,jpeg,jpg,png}',
+          src: ['{,*/}*.{gif,jpeg,jpg,png}', '!technology_logos/**/*.{gif,jpeg,jpg,png}', '!language_logos/**/*.{gif,jpeg,jpg,png}'],
           dest: '<%= config.dist %>/images'
         }]
       }
@@ -218,7 +220,7 @@ module.exports = function (grunt) {
         files: [{
           expand: true,
           cwd: '<%= config.app %>/images',
-          src: '{,*/}*.svg',
+          src: ['{,*/}*.svg', '!technology_logos/**/*.svg', '!language_logos/**/*.svg'],
           dest: '<%= config.dist %>/images'
         }]
       }
@@ -283,6 +285,8 @@ module.exports = function (grunt) {
           src: [
             '*.{ico,png,txt}',
             'images/{,*/}*.webp',
+            'images/technology_logos/*',
+            'images/language_logos/*',
             '{,*/}*.html',
             'styles/fonts/{,*/}*.*'
           ]
